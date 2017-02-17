@@ -1,5 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'jetty'
+
+jettyRun {
+    httpPort = 8081
+}
 
 repositories {
     maven { url "http://repo.maven.apache.org/maven2" }
